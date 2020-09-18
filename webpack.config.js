@@ -15,6 +15,12 @@ module.exports = {
             use: ['wasm-loader']
           },
           {
+            test: /\.worker\.js$/,
+            use: {
+              loader: 'worker-loader',
+            },
+          },
+          {
               test: /\.jsx?$/,
               exclude: /(node_modules)/,
               use: 'babel-loader'

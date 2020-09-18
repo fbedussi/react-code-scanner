@@ -1,9 +1,21 @@
 import React, { useEffect, useRef } from 'react';
-import ScannerWorker from './worker';
+import ScannerWorker from './code-scanner.worker';
 
 const scannerWorker = new ScannerWorker();
 
 const SCAN_PROID_MS = 800;
+
+export const scanImageData = imageData => {
+  return new Promise(res => {
+    const cb = e => {
+      res(e.data.response);
+    };
+    scannerWorker.addEventListener('message', cb);
+    scannerWorker.postMessage({
+      imageData,
+    });
+  });
+};
 
 const init = async ({ video, maxVideoWidth, maxVideoHeight, facingMode }) => {
   const mediaStream = await navigator.mediaDevices.getUserMedia({
@@ -77,7 +89,7 @@ const processImage = async ({
   const ctx = canvas.getContext('2d');
   ctx.drawImage(video, 0, 0, width, height);
   const imgData = ctx.getImageData(0, 0, width, height);
-  const codes = await scannerWorker.scanImageData(imgData);
+  const codes = await scanImageData(imgData);
   renderOverlay({
     canvas,
     codes,
