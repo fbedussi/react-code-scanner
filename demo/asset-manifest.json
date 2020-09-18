@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5f361e03.chunk.css",
+    "main.js": "/static/js/main.e6fe3195.chunk.js",
+    "main.js.map": "/static/js/main.e6fe3195.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.429db5b2.js",
+    "runtime-main.js.map": "/static/js/runtime-main.429db5b2.js.map",
+    "static/js/2.81f07a75.chunk.js": "/static/js/2.81f07a75.chunk.js",
+    "static/js/2.81f07a75.chunk.js.map": "/static/js/2.81f07a75.chunk.js.map",
+    "5adc6a6833404f43b4fc.worker.js": "/5adc6a6833404f43b4fc.worker.js",
+    "5adc6a6833404f43b4fc.worker.js.map": "/5adc6a6833404f43b4fc.worker.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.0a252a7546d76ced201dbda56f06b4ef.js": "/precache-manifest.0a252a7546d76ced201dbda56f06b4ef.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.81f07a75.chunk.js.LICENSE.txt": "/static/js/2.81f07a75.chunk.js.LICENSE.txt",
+    "static/media/zbar.wasm.bin": "/static/media/zbar.wasm.b946c8e6.bin"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.429db5b2.js",
+    "static/js/2.81f07a75.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.e6fe3195.chunk.js"
+  ]
+}
