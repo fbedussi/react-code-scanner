@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "A react component to scan bar codes and qr codes, it uses the zbar.wasm library in a web worker",
   "main": "./lib/CodeScanner.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fbedussi/react-code-scanner"
+  },
   "license": "MIT",
   "scripts": {
     "build": "webpack"
